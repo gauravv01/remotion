@@ -12,7 +12,6 @@ import {StrobeSkia} from './StrobeSkia';
 
 export const AllStrobesSkia: React.FC<{
 	color1: string;
-	width: number;
 }> = ({color1, width}) => {
 	const frame = useCurrentFrame();
 	const fadeOut = interpolate(frame, [32, 50], [1, 0.4], {
